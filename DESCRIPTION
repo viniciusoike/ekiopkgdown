@@ -1,0 +1,22 @@
+Package: ekiopkgdown
+Title: EKIO Template for 'pkgdown' Sites
+Version: 0.1.0
+Authors@R:
+    person(
+      "Vinicius", "Oike",
+      email = "viniciusor@ekio.io",
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0009-0005-8015-9189")
+    )
+Description: A 'pkgdown' template that gives EKIO packages a shared look:
+    brand colors, typography, a navy navigation bar, dark mode, and the
+    "Developed by EKIO" badge. Colors follow the brand tokens defined in the
+    'ekioplot' package.
+URL: https://github.com/viniciusoike/ekiopkgdown
+BugReports: https://github.com/viniciusoike/ekiopkgdown/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests:
+    testthat (>= 3.0.0),
+    yaml
+Config/testthat/edition: 3

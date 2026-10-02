@@ -1,0 +1,48 @@
+# Shared defaults for EKIO package sites. A site's own _pkgdown.yml overrides
+# any key set here, one key at a time.
+#
+# Colors below are EKIO brand tokens from inst/ekio-palettes.yaml in ekioplot.
+# If a token changes there, mirror it here, in extra.scss, and in
+# tests/testthat/test-template.R.
+template:
+  bootstrap: 5
+  light-switch: true
+  # arrow's navy/teal/green code colors sit closer to the brand than github's
+  theme: arrow-light
+  theme-dark: arrow-dark
+  bslib:
+    # Surfaces and ink: offwhite page matches theme_ekio()'s plot background
+    bg: "#FBFBF6"      # https://www.i-iro.com/dic/unohana-iro
+    fg: "#191A1C"      # gray.900
+    primary: "#1E3A5F" # blue.700
+    secondary: "#373A3D" # gray.700
+    border-color: "#CED0D4" # gray.200
+    code-bg: "#F2F3F5"      # gray.100
+    code-color: "#00605E"   # teal.600
+    # Navy bar in both modes; the page flips offwhite <-> blue.900 around it.
+    # Foreground colors for the bar live in extra.scss - with the light
+    # switch on, pkgdown drops the navbar's data-bs-theme attribute.
+    navbar-bg: "#152A44"    # blue.800
+    # Matches the taller bar set in extra.scss, so anchors and the sticky
+    # sidebar clear it.
+    pkgdown-nav-height: 74px
+    body-bg-dark: "#0D1B2A"    # blue.900
+    body-color-dark: "#CED0D4" # gray.200
+    # Type: Lora display / Lato body / Fira Code mono, as in theme_ekio()
+    base_font: {google: "Lato"}
+    heading_font: {google: "Lora"}
+    code_font: {google: "Fira Code"}
+    headings-font-weight: 600
+    navbar-brand-font-family: "Lora"
+
+navbar:
+  structure:
+    left: [intro, reference, articles, news]
+    right: [search, github, lightswitch]
+
+footer:
+  structure:
+    left: [developed_by, ekio]
+    right: [built_with]
+  components:
+    ekio: "Part of the <a href='https://ekio.io'>EKIO</a> package family."
